@@ -1,5 +1,4 @@
 import turtle
-
 bob = turtle.Turtle()
 
 for number in range(10):

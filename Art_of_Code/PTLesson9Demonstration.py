@@ -1,7 +1,5 @@
 import turtle
-
 bob = turtle.Turtle()
-
 bob.speed(10)
 distance = 60
 

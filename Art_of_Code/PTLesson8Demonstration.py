@@ -1,5 +1,4 @@
 import turtle
-
 bob = turtle.Turtle()
 
 sides = 3
