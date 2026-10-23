@@ -8,17 +8,19 @@ bob.width(1)
 
 # pencolor and color apply to border only
 #bob.pencolor("black")
-bob.color("black")
-'''
+bob.color("gray") # gray border
+
 # ex1
 for times in range( 256 ):
   c = ( times, 0, 0 )
   bob.fillcolor(c)
   bob.begin_fill()
   bob.circle( 50 )
-  bob.end_fill() 
+  bob.end_fill()
+# Note: wait for color to change
 
 # ex2
+jump(-500,0)
 for times in range( 256 ):
   c = ( times, 0, 0 )
   bob.fillcolor(c)
@@ -28,14 +30,16 @@ for times in range( 256 ):
   bob.forward(10)
 
 # ex3
+bob.color("black")
 for times in range( 256 ):
-  c = ( times, 0, 0 )
+  c = ( 0, times, 0 )
   polygon(3, 255 - times, c )
 
 # ex4
+jump(-500,0)
 for times in range( 256 ):
   c = ( times, 0, 255 - times )
-  polygon(3, 100, c )
+  polygon(3, 80, c )
   bob.forward(10)
 
 
@@ -56,7 +60,7 @@ for times in range( 256 ):
   bob.forward(10)
   bob.left(10)
 
-'''
+
 # gradient design 3
 turtle.bgcolor("black")
 for times in range( 256 ):
