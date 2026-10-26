@@ -1,6 +1,6 @@
 from myFunctions import *
 
-from random import * # or " from random import randint "
+from random import * # or: from random import randint
 
 turtle.colormode(255)
 # turtle.tracer(0)
@@ -8,7 +8,7 @@ bob.speed(0)
 bob.width(2)
 
 
-# circles design 1  ====================
+# circles design 1  ===========  random # of circles
 turtle.bgcolor("cyan")
 num = randint(2, 8)
 border = "red"
@@ -20,7 +20,7 @@ for times in range( num ):
   bob.right(15)
 
 
-# circles design 2  ====================
+# circles design 2  ============ random fill colors
 turtle.bgcolor("black")
 num = randint(10, 20)
 r = randint(0, 255)
@@ -35,7 +35,8 @@ for times in range( num ):
   bob.right(20)
 
 
-# circles design 3  ====================
+# circles design 3  ============
+# random # of circles at random locations with random sizes & random fill colors
 turtle.bgcolor("black")
 num = randint(100, 200)
 
@@ -50,4 +51,5 @@ for times in range( num ):
   radius = randint(5, 30)
   circle(radius, border, fill )
   jump(x,y)
+
 
