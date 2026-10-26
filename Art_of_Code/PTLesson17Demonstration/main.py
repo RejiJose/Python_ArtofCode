@@ -1,6 +1,8 @@
 from myFunctions import *
 
-from random import * # or: from random import randint
+# from random import *
+# OR: from random import randint
+# OR: import random [ if so, Must use random.randint() to generate numbers ]
 
 turtle.colormode(255)
 # turtle.tracer(0)
@@ -51,5 +53,3 @@ for times in range( num ):
   radius = randint(5, 30)
   circle(radius, border, fill )
   jump(x,y)
-
-
