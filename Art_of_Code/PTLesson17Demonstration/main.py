@@ -1,6 +1,6 @@
 from myFunctions import *
 
-# from random import *
+from random import *
 # OR: from random import randint
 # OR: import random [ if so, Must use random.randint() to generate numbers ]
 
